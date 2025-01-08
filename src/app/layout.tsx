@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import NavigationSidebar from "./components/NavigationSidebar/NavigationSidebar";
+import ExploreSidebar from "./components/ExploreSidebar/ExploreSidebar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,7 +30,8 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased flex`}
       >
         <NavigationSidebar />
-        {children}
+        <div className="container flex justify-center">{children}</div>
+        <ExploreSidebar />
       </body>
     </html>
   );
