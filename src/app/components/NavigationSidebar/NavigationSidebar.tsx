@@ -3,10 +3,16 @@ import React from "react";
 
 const navItems = [
   {
+    icon: "🐦",
+    href: "/",
+  },
+  {
+    icon: "🏠",
     name: "Home",
     href: "/",
   },
   {
+    icon: "🔍",
     name: "Explore",
     href: "/explore",
   },
@@ -21,7 +27,10 @@ const NavigationSidebar = () => {
           key={key}
           href={item.href}
         >
-          {item.name}
+          <div className="flex items-center gap-4">
+            <span>{item.icon}</span>
+            <span className="hidden lg:block">{item?.name}</span>
+          </div>
         </Link>
       ))}
     </div>
