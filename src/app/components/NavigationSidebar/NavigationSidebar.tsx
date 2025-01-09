@@ -14,16 +14,31 @@ const navItems = [
   {
     icon: "🔍",
     name: "Explore",
-    href: "/explore",
+    href: "#",
+  },
+  {
+    icon: "🔔",
+    name: "Notifications",
+    href: "#",
+  },
+  {
+    icon: "✉️",
+    name: "Messages",
+    href: "#",
+  },
+  {
+    icon: "🙂",
+    name: "Profile",
+    href: "#",
   },
 ];
 
 const NavigationSidebar = () => {
   return (
-    <div className="h-screen  flex flex-col">
+    <div className="h-screen flex flex-col max-w-xs px-3 lg:px-10 mt-2">
       {navItems.map((item, key) => (
         <Link
-          className="text-gray-600 hover:text-blue-500 py-2 px-4 w-max"
+          className="text-xl hover:text-blue-500 p-4 w-max"
           key={key}
           href={item.href}
         >
@@ -33,6 +48,12 @@ const NavigationSidebar = () => {
           </div>
         </Link>
       ))}
+      <div className="mt-5 flex justify-center">
+        <button className="font-bold bg-white text-black rounded-full lg:rounded-3xl block w-full lg:w-56 py-3">
+          <div className="hidden lg:block">Post</div>
+          <div className="block lg:hidden">🚩</div>
+        </button>
+      </div>
     </div>
   );
 };
