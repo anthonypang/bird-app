@@ -31,9 +31,9 @@ export default function RootLayout({
       >
         <div className="container mx-auto">
           {" "}
-          <div className="flex justify-between">
+          <div className="flex justify-evenly">
             <NavigationSidebar />
-            <div className="flex justify-center border-r border-l max-w-2xl">
+            <div className="flex justify-center border-r border-l max-w-2xl w-full">
               {children}
             </div>
             <ExploreSidebar />
