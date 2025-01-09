@@ -30,7 +30,9 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased flex`}
       >
         <NavigationSidebar />
-        <div className="container flex justify-center">{children}</div>
+        <div className="container flex justify-center border-r border-l">
+          {children}
+        </div>
         <ExploreSidebar />
       </body>
     </html>
