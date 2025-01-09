@@ -23,7 +23,7 @@ const NavigationSidebar = () => {
     <div className="h-screen  flex flex-col">
       {navItems.map((item, key) => (
         <Link
-          className="text-gray-600 hover:text-blue-500 py-2 px-4"
+          className="text-gray-600 hover:text-blue-500 py-2 px-4 w-max"
           key={key}
           href={item.href}
         >
