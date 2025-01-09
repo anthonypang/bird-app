@@ -29,11 +29,16 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased flex`}
       >
-        <NavigationSidebar />
-        <div className="container flex justify-center border-r border-l">
-          {children}
+        <div className="container mx-auto">
+          {" "}
+          <div className="flex justify-between">
+            <NavigationSidebar />
+            <div className="flex justify-center border-r border-l max-w-2xl">
+              {children}
+            </div>
+            <ExploreSidebar />
+          </div>
         </div>
-        <ExploreSidebar />
       </body>
     </html>
   );
