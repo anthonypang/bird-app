@@ -1,10 +1,10 @@
 export default function Home() {
   return (
-    <div>
+    <div className="w-full">
       {/* Tabs Component */}
-      <div className="flex gap-4">
-        <button>For You</button>
-        <button>Following</button>
+      <div className="flex">
+        <button className="tab">For You</button>
+        <button className="tab">Following</button>
       </div>
       {/* Create Post Component */}
       <div>
