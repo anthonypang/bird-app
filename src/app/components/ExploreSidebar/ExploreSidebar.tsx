@@ -2,7 +2,7 @@ import React from "react";
 
 const ExploreSidebar = () => {
   return (
-    <div className="hidden lg:block">
+    <div className="hidden lg:block px-4">
       {/* Search Box */}
       <div className="mt-6">
         <input
