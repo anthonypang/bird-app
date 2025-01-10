@@ -8,7 +8,7 @@ export type Topic = {
 };
 
 const topics = [
-  { id: 1, name: "JavaScript", url: "#" },
+  { id: 1, name: "TypeScript", url: "#" },
   { id: 2, name: "React", url: "#" },
   { id: 3, name: "Next.js", url: "#" },
 ];
