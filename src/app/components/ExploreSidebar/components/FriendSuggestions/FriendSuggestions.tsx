@@ -12,7 +12,7 @@ const suggestions: User[] = [
     id: 2,
     name: "Pang Cooper",
     userName: "@pangatron",
-    avatar: "https://i.pravatar.cc/300?img=2",
+    avatar: "https://i.pravatar.cc/300?img=4",
   },
   {
     id: 3,
