@@ -11,6 +11,8 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        outlineColor: "var(--outline-color)",
+        twitterColor: "var(--twitter-color)",
       },
     },
   },
