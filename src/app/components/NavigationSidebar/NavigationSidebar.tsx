@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import ProfileCard from "../ProfileCard/ProfileCard";
 
 const navItems = [
   {
@@ -33,12 +34,19 @@ const navItems = [
   },
 ];
 
+const currentUser = {
+  id: 1,
+  name: "John Doe",
+  userName: "johndoe",
+  avatar: "https://i.pravatar.cc/300?img=2",
+};
+
 const NavigationSidebar = () => {
   return (
     <div className="h-screen flex flex-col max-w-xs px-3 lg:px-10 mt-2">
       {navItems.map((item, key) => (
         <Link
-          className="text-xl hover:text-blue-500 p-4 w-max"
+          className="text-xl hover:navHover p-4 pr-6 w-max"
           key={key}
           href={item.href}
         >
@@ -49,10 +57,13 @@ const NavigationSidebar = () => {
         </Link>
       ))}
       <div className="mt-5 flex justify-center">
-        <button className="font-bold bg-white text-black rounded-full lg:rounded-3xl block w-full lg:w-56 py-3">
+        <button className="roundedButton bg-white text-black rounded-full lg:rounded-3xl lg:w-56 w-full">
           <div className="hidden lg:block">Post</div>
           <div className="block lg:hidden">🚩</div>
         </button>
+      </div>
+      <div className="mt-auto mb-5">
+        <ProfileCard user={currentUser} isCurrentUser />
       </div>
     </div>
   );
