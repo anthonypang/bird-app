@@ -33,7 +33,7 @@ export default function RootLayout({
           {" "}
           <div className="flex justify-center">
             <NavigationSidebar />
-            <div className="flex justify-center border-r border-l max-w-2xl w-full border-gray-700">
+            <div className="flex justify-center border-r border-l max-w-2xl w-full border-outlineColor">
               {children}
             </div>
             <ExploreSidebar />
