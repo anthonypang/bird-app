@@ -1,5 +1,7 @@
+"use client";
 import Link from "next/link";
 import React from "react";
+import { usePathname } from "next/navigation";
 import ProfileCard from "../ProfileCard/ProfileCard";
 
 const currentUser = {
@@ -32,11 +34,15 @@ const navItems = [
 ];
 
 const NavigationSidebar = () => {
+  const pathname = usePathname();
+  console.log(pathname);
   return (
     <div className="h-screen flex flex-col max-w-xs px-3 lg:px-10 mt-2">
       {navItems.map((item, key) => (
         <Link
-          className="text-xl hover:navHover p-4 lg:pr-6 w-max"
+          className={`text-xl hover:navHover p-4 lg:pr-6 w-max ${
+            pathname === item.href && item.name ? "activeNav" : ""
+          }`}
           key={key}
           href={item.href}
         >
