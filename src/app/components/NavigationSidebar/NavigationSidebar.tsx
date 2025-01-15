@@ -2,6 +2,13 @@ import Link from "next/link";
 import React from "react";
 import ProfileCard from "../ProfileCard/ProfileCard";
 
+const currentUser = {
+  id: 1,
+  name: "John Doe",
+  userName: "johndoe",
+  avatar: "https://i.pravatar.cc/300?img=2",
+};
+
 const navItems = [
   {
     icon: "🐦",
@@ -20,16 +27,9 @@ const navItems = [
   {
     icon: "🙂",
     name: "Profile",
-    href: "/johndoe",
+    href: "/" + currentUser.userName,
   },
 ];
-
-const currentUser = {
-  id: 1,
-  name: "John Doe",
-  userName: "johndoe",
-  avatar: "https://i.pravatar.cc/300?img=2",
-};
 
 const NavigationSidebar = () => {
   return (
