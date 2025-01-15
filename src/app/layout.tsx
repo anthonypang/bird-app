@@ -30,13 +30,16 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased flex`}
       >
         <div className="container mx-auto">
-          {" "}
           <div className="flex justify-center">
-            <NavigationSidebar />
-            <div className="flex justify-center border-r border-l max-w-2xl w-full border-outlineColor">
+            <div className="NavigationSidebar">
+              <NavigationSidebar />
+            </div>
+            <div className="flex justify-center border-r border-l max-w-lg 2xl:max-w-2xl w-full border-outlineColor">
               {children}
             </div>
-            <ExploreSidebar />
+            <div className="ExploreSidebar">
+              <ExploreSidebar />
+            </div>
           </div>
         </div>
       </body>
