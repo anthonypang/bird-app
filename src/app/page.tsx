@@ -1,4 +1,5 @@
 import CreatePost from "./components/CreatePost/CreatePost";
+import PostFeed from "./components/PostFeed/PostFeed";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       {/* Create Post Component */}
       <CreatePost />
       {/* Feed Component */}
+      <PostFeed />
     </div>
   );
 }
