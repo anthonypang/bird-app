@@ -77,4 +77,15 @@ textarea:focus {
     padding: 0.75rem;
     display: block;
   }
+  .post {
+    /* flex w-full p-4 border-b border-outlineColor */
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+    border-bottom: 1px solid var(--outline-color);
+  }
+  .post:hover {
+    cursor: pointer;
+    background-color: var(--background-grey);
+  }
 }

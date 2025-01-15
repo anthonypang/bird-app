@@ -18,7 +18,7 @@ type PostProps = {
 
 const Post = ({ post }: PostProps) => {
   return (
-    <div className="flex w-full p-4 border-b border-outlineColor">
+    <div className="post">
       <Avatar user={post.user} />
       <div className="w-full ml-3 mr-3">
         <div className="flex gap-1">
