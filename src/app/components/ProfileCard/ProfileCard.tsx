@@ -18,7 +18,7 @@ type ProfileCardProps = {
 const ProfileCard = ({ user, isCurrentUser }: ProfileCardProps) => {
   return (
     <Link
-      href={""}
+      href={"/" + user.userName}
       key={user.id}
       className={`flex items-center justify-between hover:bg-gray-900 ${
         isCurrentUser && "hover:navHover"
