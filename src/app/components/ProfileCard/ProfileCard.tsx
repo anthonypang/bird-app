@@ -28,7 +28,7 @@ const ProfileCard = ({ user, isCurrentUser }: ProfileCardProps) => {
         <Avatar user={user} />
         <div className={isCurrentUser ? "hidden lg:block" : "block"}>
           <div className="text-sm text-white font-bold ">{user.name}</div>
-          <div className="text-sm text-gray-400 ">{user.userName}</div>
+          <div className="text-sm text-gray-400 ">@{user.userName}</div>
         </div>
       </div>
       {!isCurrentUser ? (

@@ -15,22 +15,12 @@ const navItems = [
   {
     icon: "🔍",
     name: "Explore",
-    href: "#",
-  },
-  {
-    icon: "🔔",
-    name: "Notifications",
-    href: "#",
-  },
-  {
-    icon: "✉️",
-    name: "Messages",
-    href: "#",
+    href: "/explore",
   },
   {
     icon: "🙂",
     name: "Profile",
-    href: "#",
+    href: "/johndoe",
   },
 ];
 

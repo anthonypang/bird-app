@@ -8,7 +8,7 @@ const posts: PostType[] = [
     user: {
       id: 1,
       name: "John Doe",
-      userName: "@john_doe",
+      userName: "john_doe",
       avatar: "https://i.pravatar.cc/100",
     },
   },
@@ -19,7 +19,7 @@ const posts: PostType[] = [
     user: {
       id: 2,
       name: "Jane Smith",
-      userName: "@jane_smith",
+      userName: "jane_smith",
       avatar: "https://i.pravatar.cc/100?img=2",
     },
   },
@@ -29,7 +29,7 @@ const posts: PostType[] = [
     user: {
       id: 3,
       name: "Alex Johnson",
-      userName: "@alex_johnson",
+      userName: "alex_johnson",
       avatar: "https://i.pravatar.cc/100?img=3",
     },
   },
@@ -40,7 +40,7 @@ const posts: PostType[] = [
     user: {
       id: 4,
       name: "Chris Lee",
-      userName: "@chris_lee",
+      userName: "chris_lee",
       avatar: "https://i.pravatar.cc/100?img=4",
     },
   },
@@ -50,7 +50,7 @@ const posts: PostType[] = [
     user: {
       id: 5,
       name: "Taylor Brown",
-      userName: "@taylor_brown",
+      userName: "taylor_brown",
       avatar: "https://i.pravatar.cc/100?img=5",
     },
   },
@@ -61,7 +61,7 @@ const posts: PostType[] = [
     user: {
       id: 6,
       name: "Morgan Davis",
-      userName: "@morgan_davis",
+      userName: "morgan_davis",
       avatar: "https://i.pravatar.cc/100?img=6",
     },
   },
@@ -71,7 +71,7 @@ const posts: PostType[] = [
     user: {
       id: 7,
       name: "Jordan Wilson",
-      userName: "@jordan_wilson",
+      userName: "jordan_wilson",
       avatar: "https://i.pravatar.cc/100?img=7",
     },
   },
@@ -82,7 +82,7 @@ const posts: PostType[] = [
     user: {
       id: 8,
       name: "Riley Martinez",
-      userName: "@riley_martinez",
+      userName: "riley_martinez",
       avatar: "https://i.pravatar.cc/100?img=8",
     },
   },
@@ -92,7 +92,7 @@ const posts: PostType[] = [
     user: {
       id: 9,
       name: "Casey White",
-      userName: "@casey_white",
+      userName: "casey_white",
       avatar: "https://i.pravatar.cc/100?img=9",
     },
   },
@@ -103,7 +103,7 @@ const posts: PostType[] = [
     user: {
       id: 10,
       name: "Jamie Carter",
-      userName: "@jamie_carter",
+      userName: "jamie_carter",
       avatar: "https://i.pravatar.cc/100?img=10",
     },
   },

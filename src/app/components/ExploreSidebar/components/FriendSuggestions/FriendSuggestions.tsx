@@ -5,19 +5,19 @@ const suggestions: User[] = [
   {
     id: 1,
     name: "Jane Cooper",
-    userName: "@janec",
+    userName: "janec",
     avatar: "https://i.pravatar.cc/300?img=1",
   },
   {
     id: 2,
     name: "Pang Cooper",
-    userName: "@pangatron",
+    userName: "pangatron",
     avatar: "https://i.pravatar.cc/300?img=4",
   },
   {
     id: 3,
     name: "Thom Cooper",
-    userName: "@tman123",
+    userName: "tman123",
     avatar: "https://i.pravatar.cc/300?img=3",
   },
 ];
