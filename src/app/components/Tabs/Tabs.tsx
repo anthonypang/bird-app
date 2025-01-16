@@ -29,11 +29,7 @@ export default function Tabs({ tabs, defaultTab, onTabChange }: TabsProps) {
             key={tab.value}
             onClick={() => handleTabClick(tab.value)}
             className={`tab
-              ${
-                activeTab === tab.value
-                  ? "border-b-2 border-blue-500 text-white"
-                  : ""
-              }`}
+              ${activeTab === tab.value ? "activeTab" : ""}`}
           >
             {tab.label}
           </button>

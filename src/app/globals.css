@@ -65,12 +65,15 @@ textarea:focus {
     font-weight: bold;
     color: var(--outline-color);
     width: 100%;
-    opacity: 0.5;
-
     flex: 1;
   }
   .tab:hover {
     background: var(--background-grey);
+  }
+  .activeTab {
+    /* border-b-2 border-blue-500 text-white */
+    border-bottom: 2px solid var(--twitter-color);
+    color: white;
   }
   .navHover {
     background: var(--background-grey);
