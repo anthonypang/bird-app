@@ -65,12 +65,12 @@ textarea:focus {
     font-weight: bold;
     color: var(--outline-color);
     width: 100%;
+    opacity: 0.5;
+
     flex: 1;
   }
   .tab:hover {
-    background: var(--outline-color);
-    opacity: 0.5;
-    color: var(--background);
+    background: var(--background-grey);
   }
   .navHover {
     background: var(--background-grey);
