@@ -27,17 +27,17 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased flex`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div className="container mx-auto">
-          <div className="flex justify-center">
-            <div className="NavigationSidebar">
+        <div className="container mx-auto min-h-screen">
+          <div className="flex justify-center w-full">
+            <div className="sticky top-0 h-screen">
               <NavigationSidebar />
             </div>
-            <div className="flex justify-center border-r border-l max-w-lg 2xl:max-w-2xl w-full border-outlineColor">
+            <div className="border-r border-l max-w-lg 2xl:max-w-2xl w-full border-outlineColor">
               {children}
             </div>
-            <div className="ExploreSidebar">
+            <div className="sticky top-0 h-screen">
               <ExploreSidebar />
             </div>
           </div>
