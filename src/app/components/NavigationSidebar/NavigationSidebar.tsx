@@ -35,7 +35,7 @@ const navItems = [
 
 const NavigationSidebar = () => {
   const pathname = usePathname();
-  console.log(pathname);
+
   return (
     <div className="h-screen flex flex-col max-w-xs px-3 lg:px-10 mt-2">
       {navItems.map((item, key) => (
