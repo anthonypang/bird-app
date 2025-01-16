@@ -22,7 +22,7 @@ const CreatePost = () => {
     </div>
   );
   return (
-    <div className="flex border-b  border-t border-outlineColor pt-4 pb-1">
+    <div className="flex border-b border-outlineColor pt-4 pb-1">
       <Avatar className="ml-4" user={currentUser} />
       <div className="w-full ml-4 mr-5">
         {/* Audience dropdown */}
