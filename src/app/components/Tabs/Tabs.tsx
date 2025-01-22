@@ -22,19 +22,17 @@ export default function Tabs({ tabs, defaultTab, onTabChange }: TabsProps) {
   };
 
   return (
-    <div className="sticky top-0 z-10 bg-black w-full border-b border-gray-800">
-      <div className="flex">
-        {tabs.map((tab) => (
-          <button
-            key={tab.value}
-            onClick={() => handleTabClick(tab.value)}
-            className={`tab
+    <div className="flex border-b border-gray-800 w-full">
+      {tabs.map((tab) => (
+        <button
+          key={tab.value}
+          onClick={() => handleTabClick(tab.value)}
+          className={`tab
               ${activeTab === tab.value ? "activeTab" : ""}`}
-          >
-            {tab.label}
-          </button>
-        ))}
-      </div>
+        >
+          {tab.label}
+        </button>
+      ))}
     </div>
   );
 }
