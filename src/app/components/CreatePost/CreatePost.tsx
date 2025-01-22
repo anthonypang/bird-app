@@ -17,8 +17,8 @@ const CreatePost = () => {
     </div>
   );
   const ReplyAnchor = (
-    <div className="font-bold text-twitterColor text-sm">
-      <span>Everyone can reply</span>
+    <div className="font-bold text-twitterColor text-sm ml-2">
+      <span>🌎 Everyone can reply</span>
     </div>
   );
   return (
