@@ -2,6 +2,7 @@ import Post from "@/app/components/Post/Post";
 import React from "react";
 import { posts } from "@/app/lib/posts";
 import Comments from "./components/Comments/Comments";
+import Header from "@/app/components/Header/Header";
 
 const page = async ({ params }: { params: { postId: string } }) => {
   const { postId } = await params;
@@ -11,6 +12,7 @@ const page = async ({ params }: { params: { postId: string } }) => {
     <div>
       {post && (
         <>
+          <Header>Post</Header>
           <Post post={post} isExpanded />
           <Comments comments={posts} />
         </>
