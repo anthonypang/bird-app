@@ -2,6 +2,8 @@ import React from "react";
 import Avatar from "../Avatar/Avatar";
 import Link from "next/link";
 import { Post as PostType } from "@/app/lib/posts";
+import Dropdown from "../Dropdown/Dropdown";
+import TextArea from "../TextArea/TextArea";
 
 type PostProps = {
   post: PostType;
@@ -9,13 +11,17 @@ type PostProps = {
 };
 
 const Post = ({ post, isExpanded }: PostProps) => {
+  const MoreAnchor = <div>⌥</div>;
   const content = (
     <>
-      <Avatar user={post.user} />
-      <div className={`w-full ${isExpanded ? "" : "ml-3 mr-3"}`}>
-        <div className={`${isExpanded ? "block" : "flex gap-1"} `}>
-          <div className="font-bold">{post.user.name}</div>
-          <div className="text-gray-500">@{post.user.userName}</div>
+      {!isExpanded ? <Avatar user={post.user} /> : null}
+      <div className={`w-full ${isExpanded ? "" : "ml-3 mr-2"}`}>
+        <div className={isExpanded ? "flex gap-2" : ""}>
+          {isExpanded ? <Avatar user={post.user} /> : null}
+          <div className={`${isExpanded ? "block" : "flex gap-1"} `}>
+            <div className="font-bold">{post.user.name}</div>
+            <div className="text-gray-500">@{post.user.userName}</div>
+          </div>
         </div>
         <div className={`${isExpanded ? "py-3" : ""}`}>{post.content}</div>
         {isExpanded && (
@@ -31,6 +37,9 @@ const Post = ({ post, isExpanded }: PostProps) => {
           <button>🔁</button>
           <button>♥️</button>
           <button>🔖</button>
+          <Dropdown anchor={MoreAnchor}>
+            <div>More</div>
+          </Dropdown>
         </div>
       </div>
     </>
@@ -39,9 +48,9 @@ const Post = ({ post, isExpanded }: PostProps) => {
   return (
     <div className="postContainer">
       {isExpanded ? (
-        <div className="post block hover:bg-transparent cursor-auto">
+        <div className="post block hover:bg-transparent hover:cursor-auto">
           {content}
-          <div>Post your reply</div>
+          <TextArea placeholder="Post your reply" />
         </div>
       ) : (
         <Link className="post" href={`/${post.user.userName}/${post.id}`}>
