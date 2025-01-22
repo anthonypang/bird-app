@@ -1,4 +1,5 @@
 import CreatePost from "./components/CreatePost/CreatePost";
+import Header from "./components/Header/Header";
 import PostFeed from "./components/PostFeed/PostFeed";
 import Tabs from "./components/Tabs/Tabs";
 
@@ -10,7 +11,9 @@ export default function Home() {
 
   return (
     <div className="w-full">
-      <Tabs tabs={tabs} defaultTab="for-you" />
+      <Header hideBackButton>
+        <Tabs tabs={tabs} defaultTab="for-you" />
+      </Header>
       <CreatePost />
       <PostFeed />
     </div>
