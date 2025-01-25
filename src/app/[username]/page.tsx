@@ -1,6 +1,12 @@
 import React from "react";
 
-const page = async ({ params }: { params: { username: string } }) => {
+type PageProps = {
+  params: Promise<{
+    username: string;
+  }>;
+};
+
+const page = async ({ params }: PageProps) => {
   const { username } = await params;
   return <div>{username}</div>;
 };

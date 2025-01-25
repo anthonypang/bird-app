@@ -4,7 +4,13 @@ import { posts } from "@/app/lib/posts";
 import Comments from "./components/Comments/Comments";
 import Header from "@/app/components/Header/Header";
 
-const page = async ({ params }: { params: { postId: string } }) => {
+type PageProps = {
+  params: Promise<{
+    postId: string;
+  }>;
+};
+
+const page = async ({ params }: PageProps) => {
   const { postId } = await params;
   const post = posts.find((post) => post.id === Number(postId));
 
